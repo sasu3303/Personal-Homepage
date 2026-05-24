@@ -1,6 +1,5 @@
 /* contact-ai.css — Polished AI-generated look for contact page */
 
-
 :root {
   --c-bg: #0a0a0f;
   --c-bg2: #12121a;
@@ -19,8 +18,16 @@
   --f-mono: "Fira Code", monospace;
 }
 
-*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: var(--f-body);
@@ -30,8 +37,13 @@ body {
   overflow-x: hidden;
 }
 
-a { color: var(--c-accent); text-decoration: none; }
-a:hover { color: var(--c-text); }
+a {
+  color: var(--c-accent);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--c-text);
+}
 
 /* ---- GRID BG ---- */
 .bg-grid {
@@ -49,17 +61,23 @@ a:hover { color: var(--c-text); }
 /* ---- NAV ---- */
 .ai-nav {
   position: fixed;
-  top: 0; left: 0; width: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 100;
-  background: rgba(10,10,15,0.88);
+  background: rgba(10, 10, 15, 0.88);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--c-border);
   padding: 14px 0;
 }
 
 .ai-nav-inner {
-  width: 90%; max-width: 1200px; margin: 0 auto;
-  display: flex; justify-content: space-between; align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .ai-logo {
@@ -70,10 +88,14 @@ a:hover { color: var(--c-text); }
   letter-spacing: 2px;
 }
 
-.bracket { color: var(--c-accent2); }
+.bracket {
+  color: var(--c-accent2);
+}
 
 .ai-nav-links {
-  display: flex; gap: 28px; list-style: none;
+  display: flex;
+  gap: 28px;
+  list-style: none;
 }
 
 .ai-nav-links a {
@@ -86,17 +108,22 @@ a:hover { color: var(--c-text); }
 }
 
 .ai-nav-links a:hover,
-.ai-nav-links a.active-link { color: var(--c-accent); }
+.ai-nav-links a.active-link {
+  color: var(--c-accent);
+}
 
 /* ---- CONTAINER ---- */
 .ai-container {
-  width: 90%; max-width: 1100px; margin: 0 auto;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 /* ---- HERO ---- */
 .ai-hero {
   padding: 160px 0 80px;
-  position: relative; z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .ai-eyebrow {
@@ -131,7 +158,8 @@ a:hover { color: var(--c-text); }
 /* ---- SECTIONS ---- */
 .ai-section {
   padding: 70px 0;
-  position: relative; z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .ai-section-dark {
@@ -152,15 +180,17 @@ a:hover { color: var(--c-text); }
 .ai-section-title::after {
   content: "";
   position: absolute;
-  bottom: -10px; left: 0;
-  width: 50px; height: 3px;
+  bottom: -10px;
+  left: 0;
+  width: 50px;
+  height: 3px;
   background: linear-gradient(90deg, var(--c-accent), var(--c-accent2));
   border-radius: 2px;
 }
 
 /* ---- AVAILABILITY ---- */
 .avail-banner {
-  background: linear-gradient(135deg, rgba(0,229,255,0.06), rgba(123,47,247,0.06));
+  background: linear-gradient(135deg, rgba(0, 229, 255, 0.06), rgba(123, 47, 247, 0.06));
   border: 1px solid var(--c-border);
   border-radius: 12px;
   padding: 48px;
@@ -180,15 +210,21 @@ a:hover { color: var(--c-text); }
 }
 
 .pulse-dot {
-  width: 10px; height: 10px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background: var(--c-green);
   animation: pulse 2s ease-in-out infinite;
 }
 
 @keyframes pulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(0, 200, 83, 0.4); }
-  50%       { box-shadow: 0 0 0 10px rgba(0, 200, 83, 0); }
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 200, 83, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(0, 200, 83, 0);
+  }
 }
 
 .avail-title {
@@ -217,7 +253,9 @@ a:hover { color: var(--c-text); }
   color: var(--c-bg);
   border-radius: 8px;
   font-weight: 700;
-  transition: transform 0.25s, box-shadow 0.25s;
+  transition:
+    transform 0.25s,
+    box-shadow 0.25s;
 }
 
 .ai-cta-btn:hover {
@@ -242,7 +280,9 @@ a:hover { color: var(--c-text); }
   align-items: center;
   gap: 16px;
   color: var(--c-text);
-  transition: border-color 0.25s, transform 0.25s;
+  transition:
+    border-color 0.25s,
+    transform 0.25s;
 }
 
 .ai-contact-card:hover {
@@ -252,10 +292,13 @@ a:hover { color: var(--c-text); }
 }
 
 .ai-card-icon {
-  width: 52px; height: 52px;
+  width: 52px;
+  height: 52px;
   border-radius: 10px;
   background: var(--c-accent-dim);
-  display: flex; align-items: center; justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
   font-family: var(--f-display);
   font-size: 1rem;
@@ -289,7 +332,9 @@ a:hover { color: var(--c-text); }
   border: 1px solid var(--c-border);
   border-radius: 10px;
   padding: 28px;
-  transition: border-color 0.25s, transform 0.25s;
+  transition:
+    border-color 0.25s,
+    transform 0.25s;
 }
 
 .looking-card:hover {
@@ -353,7 +398,8 @@ a:hover { color: var(--c-text); }
 .ai-footer {
   padding: 30px 0;
   border-top: 1px solid var(--c-border);
-  position: relative; z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .ai-footer-inner {
@@ -376,19 +422,39 @@ a:hover { color: var(--c-text); }
   transition: color 0.25s;
 }
 
-.ai-footer-links a:hover { color: var(--c-accent); }
+.ai-footer-links a:hover {
+  color: var(--c-accent);
+}
 
 /* ---- RESPONSIVE ---- */
 @media (max-width: 900px) {
-  .ai-cards-grid { grid-template-columns: repeat(2, 1fr); }
-  .looking-grid { grid-template-columns: 1fr; }
-  .ai-nav-links { display: none; }
-  .ai-hero-title { font-size: 2.4rem; }
+  .ai-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .looking-grid {
+    grid-template-columns: 1fr;
+  }
+  .ai-nav-links {
+    display: none;
+  }
+  .ai-hero-title {
+    font-size: 2.4rem;
+  }
 }
 
 @media (max-width: 600px) {
-  .ai-cards-grid { grid-template-columns: 1fr; }
-  .avail-banner { padding: 28px 20px; }
-  .ai-footer-inner { flex-direction: column; gap: 12px; text-align: center; }
-  .ai-footer-links a { margin-left: 12px; }
+  .ai-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  .avail-banner {
+    padding: 28px 20px;
+  }
+  .ai-footer-inner {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+  .ai-footer-links a {
+    margin-left: 12px;
+  }
 }

@@ -6,7 +6,7 @@
   border: 1px solid #2a2a40;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
 }
 
 .terminal-titlebar {
@@ -24,12 +24,18 @@
   border-radius: 50%;
 }
 
-.terminal-dot-red    { background: #ff5f57; }
-.terminal-dot-yellow { background: #ffbd2e; }
-.terminal-dot-green  { background: #28ca41; }
+.terminal-dot-red {
+  background: #ff5f57;
+}
+.terminal-dot-yellow {
+  background: #ffbd2e;
+}
+.terminal-dot-green {
+  background: #28ca41;
+}
 
 .terminal-titlebar-text {
-  font-family: 'Fira Code', monospace;
+  font-family: "Fira Code", monospace;
   font-size: 0.75rem;
   color: #5a5a78;
   margin-left: 8px;
@@ -40,7 +46,7 @@
   min-height: 320px;
   max-height: 460px;
   overflow-y: auto;
-  font-family: 'Fira Code', monospace;
+  font-family: "Fira Code", monospace;
   font-size: 0.88rem;
   line-height: 1.65;
 }
@@ -51,11 +57,21 @@
   word-wrap: break-word;
 }
 
-.terminal-output-line-command  { color: #00e5ff; }
-.terminal-output-line-response { color: #9898b0; }
-.terminal-output-line-success  { color: #00c853; }
-.terminal-output-line-warning  { color: #ffab00; }
-.terminal-output-line-accent   { color: #bb86fc; }
+.terminal-output-line-command {
+  color: #00e5ff;
+}
+.terminal-output-line-response {
+  color: #9898b0;
+}
+.terminal-output-line-success {
+  color: #00c853;
+}
+.terminal-output-line-warning {
+  color: #ffab00;
+}
+.terminal-output-line-accent {
+  color: #bb86fc;
+}
 
 .terminal-input-row {
   display: flex;
@@ -64,7 +80,10 @@
   margin-top: 6px;
 }
 
-.terminal-prompt { color: #00e5ff; flex-shrink: 0; }
+.terminal-prompt {
+  color: #00e5ff;
+  flex-shrink: 0;
+}
 
 .terminal-input {
   flex: 1;
@@ -72,9 +91,11 @@
   border: none;
   outline: none;
   color: #e8e8f0;
-  font-family: 'Fira Code', monospace;
+  font-family: "Fira Code", monospace;
   font-size: 0.88rem;
   caret-color: #00e5ff;
 }
 
-.terminal-input::placeholder { color: #5a5a78; }
+.terminal-input::placeholder {
+  color: #5a5a78;
+}
