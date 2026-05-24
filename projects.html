@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Projects by Sanjay Sundar BV — Full-stack apps, AI/ML research, and autonomous simulations." />
+    <meta name="author" content="Sanjay Sundar BV" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <title>Projects — Sanjay Sundar BV</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="my-navbar">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a href="index.html" class="logo">&lt;Sanjay /&gt;</a>
+        <button class="navbar-toggler d-md-none border-0 bg-transparent" type="button"
+          data-bs-toggle="collapse" data-bs-target="#navMenuProj"
+          aria-controls="navMenuProj" aria-expanded="false" aria-label="Toggle navigation">
+          <span style="color:#4fc3f7; font-size:1.4rem;">&#9776;</span>
+        </button>
+        <div class="collapse navbar-collapse d-md-flex justify-content-end" id="navMenuProj">
+          <ul class="list-unstyled d-flex gap-3 mb-0 flex-column flex-md-row mt-3 mt-md-0">
+            <li><a href="index.html#about" class="nav-link">About</a></li>
+            <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+            <li><a href="index.html#experience" class="nav-link">Experience</a></li>
+            <li><a href="index.html#terminal" class="nav-link">Terminal</a></li>
+            <li><a href="projects.html" class="nav-link active">Projects</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="projects-page-hero">
+      <div class="container">
+        <h1>My <span>Projects</span></h1>
+        <p>Everything I've built — from ML research and full-stack platforms to desktop apps and web experiments.</p>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects-section">
+      <div class="container">
+
+        <!-- 1. FEATURED: Nexus Gaming Hub -->
+        <div class="row mb-4">
+          <div class="col-12">
+            <div class="project-card featured-card">
+              <div class="project-card-top">
+                <div class="project-type">&#11088; Featured Project</div>
+                <h3>Nexus Gaming Hub</h3>
+              </div>
+              <div class="project-card-body">
+                <div>
+                  <p>
+                    A full-stack gaming ecosystem that brings together digital storefronts,
+                    esports tournament tracking, and social guild management in one platform.
+                    Built from scratch using React on the frontend and Node/Express on the
+                    backend with MySQL.
+                  </p>
+                  <div class="tech-stack">
+                    <span class="tech-badge">React.js</span>
+                    <span class="tech-badge">Node.js</span>
+                    <span class="tech-badge">MySQL</span>
+                    <span class="tech-badge">Express</span>
+                  </div>
+                  <a href="https://github.com/sasu3303" target="_blank" rel="noopener noreferrer" class="project-github-link">&#128279; View on GitHub</a>
+                </div>
+                <div>
+                  <ul class="project-highlights">
+                    <li>Designed a MySQL schema handling many-to-many relationships with Stored Procedures, Views, and Triggers</li>
+                    <li>Used Prepared Statements throughout to prevent SQL injection attacks</li>
+                    <li>Built Role-Based Access Control — separate dashboards for Admins and Players</li>
+                    <li>Most complex project I've shipped — full end-to-end ownership</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2: GANs + Respiratio -->
+        <div class="row mb-4">
+
+          <!-- 2. Conditional GANs -->
+          <div class="col-md-6 mb-4 mb-md-0">
+            <div class="project-card h-100">
+              <div class="project-card-top">
+                <div class="project-type">&#129504; AI / ML Research</div>
+                <h3>Conditional GANs for Image Translation</h3>
+              </div>
+              <div class="project-card-body">
+                <p>
+                  Led a 6-member research team to build Conditional GANs for converting
+                  images across domains — like Google Maps to satellite view. Used U-Net
+                  generators with skip connections and a PatchGAN discriminator.
+                </p>
+                <div class="tech-stack">
+                  <span class="tech-badge">Python</span>
+                  <span class="tech-badge">TensorFlow</span>
+                  <span class="tech-badge">PyTorch</span>
+                </div>
+                <ul class="project-highlights">
+                  <li>Tested across 5 datasets including Google Maps and Cityscapes</li>
+                  <li>Achieved 95% discriminator accuracy</li>
+                  <li>Published a technical research report</li>
+                </ul>
+                <a href="https://github.com/sasu3303" target="_blank" rel="noopener noreferrer" class="project-github-link">&#128279; View on GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Respiratio -->
+          <div class="col-md-6">
+            <div class="project-card h-100">
+              <div class="project-card-top">
+                <div class="project-type">&#129657; ML + Healthcare</div>
+                <h3>Respiratio — Disease Prediction App</h3>
+              </div>
+              <div class="project-card-body">
+                <p>
+                  An app that uses machine learning to predict diseases based on input
+                  symptoms. You enter your symptoms and the model generates a list of
+                  potential diseases. Has a proper frontend UI and an ML model backend.
+                </p>
+                <div class="tech-stack">
+                  <span class="tech-badge">Python</span>
+                  <span class="tech-badge">Machine Learning</span>
+                  <span class="tech-badge">Frontend</span>
+                  <span class="tech-badge">Dataset</span>
+                </div>
+                <ul class="project-highlights">
+                  <li>Structured as Dataset, Front-end, and ML-Model modules</li>
+                  <li>Trained on a real medical symptoms dataset</li>
+                  <li>Predicts multiple possible conditions from symptom input</li>
+                </ul>
+                <a href="https://github.com/sasu3303/Respiratio" target="_blank" rel="noopener noreferrer" class="project-github-link">&#128279; View on GitHub</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Row 3: Autonomous Parking + Home Service -->
+        <div class="row mb-4">
+
+          <!-- 4. Autonomous Parking -->
+          <div class="col-md-6 mb-4 mb-md-0">
+            <div class="project-card h-100">
+              <div class="project-card-top">
+                <div class="project-type">&#127776; Simulation &amp; RL</div>
+                <h3>Autonomous Parking Simulation</h3>
+              </div>
+              <div class="project-card-body">
+                <p>
+                  A 3D parking simulation in Unity where an AI agent learns to park by
+                  itself. Handles tricky maneuvers like 90° turns and parallel parking
+                  using a custom reward function.
+                </p>
+                <div class="tech-stack">
+                  <span class="tech-badge">Python</span>
+                  <span class="tech-badge">Unity</span>
+                  <span class="tech-badge">Blender</span>
+                  <span class="tech-badge">PPO</span>
+                </div>
+                <ul class="project-highlights">
+                  <li>Proximal Policy Optimization with a custom reward function</li>
+                  <li>Unity ML-Agents for real-time interaction</li>
+                  <li>3D vehicle and obstacle models built in Blender</li>
+                </ul>
+                <a href="https://github.com/sasu3303" target="_blank" rel="noopener noreferrer" class="project-github-link">&#128279; View on GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Home Service Management -->
+          <div class="col-md-6">
+            <div class="project-card h-100">
+              <div class="project-card-top">
+                <div class="project-type">&#127968; Full-Stack Web App</div>
+                <h3>Home-Service-Management</h3>
+              </div>
+              <div class="project-card-body">
+                <p>
+                  A service-booking platform similar to Swiggy/Zomato, but for
+                  household workers — plumbers, carpenters, gardeners. Customers
+                  can browse, hire workers, and get their household problems solved.
+                </p>
+                <div class="tech-stack">
+                  <span class="tech-badge">Front-end</span>
+                  <span class="tech-badge">Back-end</span>
+                  <span class="tech-badge">Full-Stack</span>
+                </div>
+                <ul class="project-highlights">
+                  <li>Separate backend and frontend architecture</li>
+                  <li>Service provider and customer-facing views</li>
+                  <li>Handles worker discovery and service booking</li>
+                </ul>
+                <a href="https://github.com/sasu3303/Home-Service-Management" target="_blank" rel="noopener noreferrer" class="project-github-link">&#128279; View on GitHub</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Row 4: Airbnb + Inventory -->
+        <div class="row mb-4">
+
+          <!-- 6. Airbnb SF Listings -->
+          <div class="col-md-6 mb-4 mb-md-0">
+            <div class="project-card h-100">
+              <div class="project-card-top">
+                <div class="project-type">&#127968; Web Dev — CS 5610</div>
+                <h3>Airbnb SF Listings</h3>
+              </div>
+              <div class="project-card-body">
+                <p>
+                  A JavaScript + DOM page that fetches and displays the first 50
+                  San Francisco Airbnb listings from a JSON file using fetch and
+                  async/await. Built for CS 5610 Web Development at Northeastern.
+                </p>
+                <div class="tech-stack">
+                  <span class="tech-badge">JavaScript</span>
+                  <span class="tech-badge">HTML5</span>
+                  <span class="tech-badge">CSS3</span>
+                  <span class="tech-badge">Fetch API</span>
+                  <span class="tech-badge">async/await</span>
+                </div>
+                <ul class="project-highlights">
+                  <li>Live search filtering by name, description, neighborhood</li>
+                  <li>Sort by price (low/high) or rating</li>
+                  <li>Filter by room type — Entire home, Private room, Shared room</li>
+                  <li>Superhost badge overlay on listing thumbnails</li>
+                </ul>
+                <a href="https://github.com/sasu3303" target="_blank" rel="noopener noreferrer" class="project-github-link">&#128279; View on GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Inventory Management -->
+          <div class="col-md-6">
+            <div class="project-card h-100">
+              <div class="project-card-top">
+                <div class="project-type">&#128230; Java Desktop App</div>
+                <h3>Inventory Management System</h3>
+              </div>
+              <div class="project-card-body">
+                <p>
+                  A Java desktop application that uses a MySQL database to store and
+                  retrieve product, customer, category, and order information. Separate
+                  pages for managing each module with login authentication.
+                </p>
+                <div class="tech-stack">
+                  <span class="tech-badge">Java</span>
+                  <span class="tech-badge">MySQL</span>
+                  <span class="tech-badge">Desktop App</span>
+                </div>
+                <ul class="project-highlights">
+                  <li>Modules: Product, Category, Order, Customer</li>
+                  <li>User login with username and password management</li>
+                  <li>Static desktop application with SQL-backed data</li>
+                </ul>
+                <a href="https://github.com/sasu3303/Inventory-Management-System" target="_blank" rel="noopener noreferrer" class="project-github-link">&#128279; View on GitHub</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Row 5: Voting System (solo) -->
+        <div class="row">
+          <div class="col-md-6">
+            <div class="project-card h-100">
+              <div class="project-card-top">
+                <div class="project-type">&#128226; Java Desktop App</div>
+                <h3>Voting System</h3>
+              </div>
+              <div class="project-card-body">
+                <p>
+                  A Java desktop application for managing elections — admins can create
+                  elections and add candidates, while voters can register and cast their
+                  votes. Includes results tracking and election status management.
+                </p>
+                <div class="tech-stack">
+                  <span class="tech-badge">Java</span>
+                  <span class="tech-badge">Desktop App</span>
+                </div>
+                <ul class="project-highlights">
+                  <li>Admin panel: create elections, manage candidates and voters</li>
+                  <li>Voter flow: registration, login, and voting process</li>
+                  <li>Election results and status tracking</li>
+                </ul>
+                <a href="https://github.com/sasu3303/Voting-System" target="_blank" rel="noopener noreferrer" class="project-github-link">&#128279; View on GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p class="mb-0">&copy; 2026 Sanjay Sundar BV</p>
+        <div>
+          <a href="https://github.com/sasu3303" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/sanjaysundarbv/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="mailto:sanjaysundar.bv@gmail.com">Email</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>

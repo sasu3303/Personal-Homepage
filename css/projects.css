@@ -1,0 +1,135 @@
+/* Projects page styles */
+
+.projects-page-hero {
+  background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);
+  color: white;
+  padding: 120px 0 60px;
+}
+
+.projects-page-hero h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.projects-page-hero h1 span {
+  color: #4fc3f7;
+}
+
+.projects-page-hero p {
+  color: #bbb;
+  font-size: 1rem;
+  max-width: 550px;
+  margin-top: 10px;
+}
+
+/* ---- PROJECT CARDS ---- */
+.projects-section {
+  background: #f8f9fa;
+  padding: 60px 0;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+  margin-bottom: 24px;
+  transition: transform 0.25s, box-shadow 0.25s;
+  height: 100%;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.project-card-top {
+  background: linear-gradient(135deg, #1a1a2e, #0f3460);
+  padding: 20px 22px;
+}
+
+.project-type {
+  font-size: 0.75rem;
+  color: #4fc3f7;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 6px;
+}
+
+.project-card-top h3 {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.project-card-body {
+  padding: 22px;
+}
+
+.project-card-body p {
+  color: #555;
+  font-size: 0.93rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 18px;
+}
+
+.tech-badge {
+  background: #e8f4fd;
+  color: #0f3460;
+  font-size: 0.77rem;
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1px solid #bee3f8;
+  font-weight: 500;
+}
+
+.project-highlights {
+  padding-left: 15px;
+  margin: 0;
+}
+
+.project-highlights li {
+  font-size: 0.88rem;
+  color: #666;
+  margin-bottom: 6px;
+  line-height: 1.6;
+}
+
+.project-github-link {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #0f3460;
+  background: #e8f4fd;
+  border: 1px solid #bee3f8;
+  padding: 6px 16px;
+  border-radius: 20px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.project-github-link:hover {
+  background: #0f3460;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* featured card spans full row */
+.project-card.featured-card .project-card-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .project-card.featured-card .project-card-body {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,401 @@
+/* My personal homepage styles - Sanjay Sundar BV */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* ---- NAVBAR ---- */
+.my-navbar {
+  background-color: #1a1a2e;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.my-navbar .logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #4fc3f7;
+  text-decoration: none;
+}
+
+.my-navbar .logo:hover {
+  color: #fff;
+}
+
+.my-navbar .nav-link {
+  color: #ccc;
+  font-size: 0.9rem;
+  margin-left: 10px;
+  transition: color 0.2s;
+}
+
+.my-navbar .nav-link:hover,
+.my-navbar .nav-link.active {
+  color: #4fc3f7;
+}
+
+/* ---- HERO ---- */
+.hero-section {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  color: white;
+  padding: 100px 0 80px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-section h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.hero-section h1 span {
+  color: #4fc3f7;
+}
+
+.hero-section .subtitle {
+  font-size: 1.15rem;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.hero-section .typed-text {
+  color: #4fc3f7;
+  font-weight: 600;
+}
+
+.hero-section .hero-desc {
+  font-size: 1rem;
+  color: #bbb;
+  max-width: 500px;
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+.hero-btns a {
+  margin-right: 12px;
+  margin-bottom: 10px;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-block;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.btn-main {
+  background-color: #4fc3f7;
+  color: #1a1a2e;
+  border: 2px solid #4fc3f7;
+}
+
+.btn-main:hover {
+  background-color: #29b6f6;
+  color: #1a1a2e;
+}
+
+.btn-outline-main {
+  background: transparent;
+  color: #4fc3f7;
+  border: 2px solid #4fc3f7;
+}
+
+.btn-outline-main:hover {
+  background: #4fc3f7;
+  color: #1a1a2e;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: rgba(79, 195, 247, 0.15);
+  border: 1px solid #4fc3f7;
+  color: #4fc3f7;
+  font-size: 0.8rem;
+  padding: 5px 14px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+/* ---- SECTIONS GENERAL ---- */
+section {
+  padding: 70px 0;
+}
+
+.section-heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 8px;
+}
+
+.section-heading span {
+  color: #0f3460;
+}
+
+.heading-line {
+  width: 50px;
+  height: 4px;
+  background-color: #4fc3f7;
+  border-radius: 2px;
+  margin-bottom: 40px;
+}
+
+/* ---- ABOUT ---- */
+#about {
+  background-color: #fff;
+}
+
+.about-text {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.9;
+  margin-bottom: 15px;
+}
+
+.about-info-item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+  align-items: flex-start;
+  font-size: 0.95rem;
+}
+
+.about-info-item .label {
+  font-weight: 600;
+  color: #1a1a2e;
+  min-width: 110px;
+}
+
+.about-info-item .value {
+  color: #555;
+}
+
+.stat-box {
+  background: #f0f8ff;
+  border-left: 4px solid #4fc3f7;
+  border-radius: 6px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.stat-box .num {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f3460;
+  display: block;
+}
+
+.stat-box .lbl {
+  font-size: 0.85rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ---- SKILLS ---- */
+#skills {
+  background-color: #f8f9fa;
+}
+
+.skill-box {
+  background: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  border-top: 3px solid #4fc3f7;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.skill-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.skill-box h5 {
+  font-weight: 700;
+  color: #1a1a2e;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.skill-pill {
+  display: inline-block;
+  background: #e8f4fd;
+  color: #0f3460;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 5px 14px;
+  border-radius: 20px;
+  margin: 4px 3px;
+  border: 1px solid #bee3f8;
+}
+
+/* ---- EXPERIENCE ---- */
+#experience {
+  background: #fff;
+}
+
+.exp-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 20px;
+  border-left: 5px solid #4fc3f7;
+  position: relative;
+  transition: box-shadow 0.2s;
+}
+
+.exp-card:hover {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.exp-card .role {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 3px;
+}
+
+.exp-card .company {
+  font-size: 0.95rem;
+  color: #0f3460;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.exp-card .date-badge {
+  display: inline-block;
+  background: #e8f4fd;
+  color: #0f3460;
+  font-size: 0.78rem;
+  padding: 3px 12px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.exp-progression-note {
+  font-size: 0.88rem;
+  color: #4fc3f7;
+  background: rgba(79, 195, 247, 0.08);
+  border-left: 3px solid #4fc3f7;
+  padding: 8px 12px;
+  border-radius: 0 4px 4px 0;
+  margin-bottom: 14px;
+  font-style: italic;
+}
+
+.exp-card ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.exp-card ul li {
+  font-size: 0.93rem;
+  color: #555;
+  margin-bottom: 6px;
+  line-height: 1.6;
+}
+
+/* ---- CERTIFICATIONS ---- */
+#certifications {
+  background: #f8f9fa;
+}
+
+.cert-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 20px;
+  transition: transform 0.2s;
+}
+
+.cert-card:hover {
+  transform: translateY(-3px);
+}
+
+.cert-icon-box {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #e8f4fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #0f3460;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+  border: 2px solid #bee3f8;
+}
+
+.cert-name {
+  font-weight: 700;
+  color: #1a1a2e;
+  font-size: 0.95rem;
+}
+
+.cert-org {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+/* ---- TERMINAL ---- */
+#terminal {
+  background: #1a1a2e;
+  padding: 70px 0;
+}
+
+#terminal .section-heading {
+  color: #4fc3f7;
+}
+
+#terminal .heading-line {
+  background-color: #4fc3f7;
+}
+
+.terminal-intro-text {
+  color: #aaa;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+/* Terminal component styles are in terminal.css */
+
+/* ---- FOOTER ---- */
+.site-footer {
+  background: #1a1a2e;
+  color: #aaa;
+  padding: 30px 0;
+  font-size: 0.9rem;
+}
+
+.site-footer a {
+  color: #4fc3f7;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.site-footer a:hover {
+  color: #fff;
+}

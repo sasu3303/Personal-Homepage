@@ -1,0 +1,28 @@
+{
+  "name": "sanjay-sundar-homepage",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Personal homepage for Sanjay Sundar BV — a cyberpunk-themed portfolio showcasing projects, skills, and experience in full-stack development, AI/ML, and Salesforce.",
+  "main": "index.html",
+  "scripts": {
+    "lint": "eslint js/**/*.js",
+    "lint:fix": "eslint js/**/*.js --fix",
+    "format": "prettier --write '**/*.{html,css,js,json,md}'",
+    "format:check": "prettier --check '**/*.{html,css,js,json,md}'"
+  },
+  "keywords": [
+    "portfolio",
+    "homepage",
+    "personal-website",
+    "vanilla-js",
+    "es6-modules",
+    "html5",
+    "css3"
+  ],
+  "author": "Sanjay Sundar BV",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.0"
+  }
+}
