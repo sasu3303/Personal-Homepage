@@ -15,7 +15,7 @@ Build a personal homepage using vanilla HTML5, CSS3, and ES6+ as a front-end onl
 
 ## Screenshot
 
-![Homepage Screenshot](images/screenshot.png)
+![Homepage Demo](images/demo.gif)
 
 ---
 
