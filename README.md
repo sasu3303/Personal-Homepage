@@ -153,8 +153,9 @@ Then open `http://localhost:3000` in your browser.
 
 ## Class Link
 
-**CS 5610 - Web Development**
-Northeastern University — Khoury College of Computer Sciences
+**CS 5610 - Web Development**  
+Northeastern University — Khoury College of Computer Sciences  
+[Course Link](https://johnguerra.co/classes/webDevelopment_online_summer_2026/)
 
 ---
 
