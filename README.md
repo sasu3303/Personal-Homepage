@@ -126,7 +126,7 @@ Then open `http://localhost:3000` in your browser.
 ### AI Usage Highlights
 
 - **Contact page (AI-generated page):** The entire `contact.html` and `contact-ai.css` were designated as the AI-generated page, with a visibly different design system (cyberpunk/dark theme vs the beginner Bootstrap style of the other pages).
-  - *Prompt used:* "Generate a polished, AI-aesthetic contact page that looks visually different from the rest of the site — like it was made by AI rather than a beginner developer."
+  - *Prompt used:* "Generate a polished, AI-aesthetic contact page that looks visually different from the rest of the site."
 
 - **Content and copy editing:** Work experience bullet points, about me section, and project descriptions were refined with Claude based on my original resume content.
 
