@@ -135,7 +135,7 @@ Then open `http://localhost:3000` in your browser.
 ---
 
 ## Video Demonstration
-🎥 [Watch the demo video](https://youtu.be/thfOFkHWvv0)
+🎥 [Watch the demo video](https://youtu.be/vyLfcLn69HY)
 ---
 
 ## Author
