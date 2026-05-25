@@ -52,7 +52,7 @@ Build a personal homepage using vanilla HTML5, CSS3, and ES6+ as a front-end onl
 ```
 homepage/
 ├── index.html              # Main homepage (hero, about, skills, experience, terminal)
-├── projects.html           # Projects showcase — 8 projects ranked by complexity
+├── projects.html           # Projects showcase
 ├── contact.html            # Contact page (AI-generated — different visual style)
 ├── css/
 │   ├── styles.css          # Global styles — navbar, hero, about, skills, experience
@@ -68,7 +68,7 @@ homepage/
 │   ├── favicon.svg         # SVG site favicon
 │   └── screenshot.png      # Homepage screenshot (for README)
 ├── package.json            # Project metadata, scripts, and dev dependencies
-├── .eslintrc.json          # ESLint configuration (es2021, browser env, recommended rules)
+├── .eslintrc.json          # ESLint configuration 
 ├── .prettierrc             # Prettier formatting configuration
 ├── LICENSE                 # MIT License
 └── README.md               # This file
