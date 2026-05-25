@@ -15,17 +15,17 @@ Build a personal homepage using vanilla HTML5, CSS3, and ES6+ as a front-end onl
 
 ## Screenshot
 
-![Homepage Demo](images/demo.gif)
+![Homepage Screenshot](images/screenshot.png)
 
 ---
 
 ## Pages
 
-| Page            | Description                                                                           |
-| --------------- | ------------------------------------------------------------------------------------- |
-| `index.html`    | Main homepage — hero, about, skills, experience, certifications, interactive terminal |
-| `projects.html` | Full project showcase                                                                 |
-| `contact.html`  | Contact info, availability, and co-op details (AI-generated page)                     |
+| Page | Description |
+|------|-------------|
+| `index.html` | Main homepage — hero, about, skills, experience, certifications, interactive terminal |
+| `projects.html` | Full project showcase |
+| `contact.html` | Contact info, availability, and co-op details (AI-generated page) |
 
 ---
 
@@ -86,20 +86,17 @@ homepage/
 ### Installation Steps
 
 1. **Clone the repository:**
-
    ```bash
    git clone https://github.com/sasu3303/homepage.git
    cd homepage
    ```
 
 2. **Install dev dependencies:**
-
    ```bash
    npm install
    ```
 
 3. **Run ESLint:**
-
    ```bash
    npm run lint
    ```
@@ -112,12 +109,11 @@ homepage/
 ### Running Locally
 
 **Node.js serve:**
-
 ```bash
 npx serve .
 ```
-
 Then open `http://localhost:3000` in your browser.
+
 
 ---
 
@@ -130,7 +126,7 @@ Then open `http://localhost:3000` in your browser.
 ### AI Usage Highlights
 
 - **Contact page (AI-generated page):** The entire `contact.html` and `contact-ai.css` were designated as the AI-generated page, with a visibly different design system (cyberpunk/dark theme vs the beginner Bootstrap style of the other pages).
-  - _Prompt used:_ "Generate a polished, AI-aesthetic contact page that looks visually different from the rest of the site — like it was made by AI rather than a beginner developer."
+  - *Prompt used:* "Generate a polished, AI-aesthetic contact page that looks visually different from the rest of the site — like it was made by AI rather than a beginner developer."
 
 - **Content and copy editing:** Work experience bullet points, about me section, and project descriptions were refined with Claude based on my original resume content.
 
@@ -139,15 +135,12 @@ Then open `http://localhost:3000` in your browser.
 ---
 
 ## Video Demonstration
-
-🎥 [Watch the demo video](#) _(add your video link here after recording)_
-
+🎥 [Watch the demo video](https://youtu.be/thfOFkHWvv0)
 ---
 
 ## Author
 
 **Sanjay Sundar BV**
-
 - Homepage: [sasu3303.github.io/homepage](https://sasu3303.github.io/homepage)
 - Education: M.S. Computer Science — Northeastern University, Boston (Expected May 2028)
 - Email: [sanjaysundar.bv@gmail.com](mailto:sanjaysundar.bv@gmail.com)
@@ -158,9 +151,9 @@ Then open `http://localhost:3000` in your browser.
 
 ## Class Link
 
-**CS 5610 - Web Development**  
-Northeastern University — Khoury College of Computer Sciences  
-[Course Link](https://johnguerra.co/classes/webDevelopment_online_summer_2026/)
+**CS 5610 - Web Development**
+Northeastern University — Khoury College of Computer Sciences
+🔗 [Course Link](https://johnguerra.co/classes/webDevelopment_online_summer_2026/)
 
 ---
 
