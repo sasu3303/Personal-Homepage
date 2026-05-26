@@ -90,6 +90,12 @@ homepage/
    git clone https://github.com/sasu3303/homepage.git
    cd homepage
    ```
+   I tried cloning your repository from here and I received this error:
+   ```
+   > git clone https://github.com/sasu3303/homepage.git       /Users/barbaralouyakis/Desktop/CS5610/code_reviews/homepage --progress
+   remote: Repository not found.
+   fatal: repository 'https://github.com/sasu3303/homepage.git/' not found
+   ```
 
 2. **Install dev dependencies:**
    ```bash
