@@ -1,5 +1,5 @@
 /**
- * main.js — Core site functionality
+ * main.js - Core site functionality
  * Handles navigation, scroll animations, and intersection observer
  */
 

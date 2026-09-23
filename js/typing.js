@@ -1,5 +1,5 @@
 /**
- * typing.js — Typing animation effect for hero section
+ * typing.js - Typing animation effect for hero section
  * Cycles through an array of roles with a typewriter effect.
  */
 

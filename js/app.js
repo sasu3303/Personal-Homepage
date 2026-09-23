@@ -1,5 +1,5 @@
 /**
- * app.js — Application entry point
+ * app.js - Application entry point
  * Imports and initializes all ES6 modules.
  */
 

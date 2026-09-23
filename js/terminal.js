@@ -1,5 +1,5 @@
 /**
- * terminal.js — Interactive Terminal Component
+ * terminal.js - Interactive Terminal Component
  * A custom command-line interface that lets visitors explore
  * Sanjay's profile by typing commands.
  */
@@ -11,16 +11,16 @@ const COMMANDS = {
       const lines = [
         "Available commands:",
         "",
-        "  about       — Who is Sanjay?",
-        "  skills      — Technical skill set",
-        "  experience  — Work history overview",
-        "  projects    — Notable projects",
-        "  education   — Academic background",
-        "  contact     — How to reach me",
-        "  certs       — Certifications",
-        "  fun         — A random fun fact",
-        "  clear       — Clear the terminal",
-        "  help        — Show this help menu",
+        "  about       - Who is Sanjay?",
+        "  skills      - Technical skill set",
+        "  experience  - Work history overview",
+        "  projects    - Notable projects",
+        "  education   - Academic background",
+        "  contact     - How to reach me",
+        "  certs       - Certifications",
+        "  fun         - A random fun fact",
+        "  clear       - Clear the terminal",
+        "  help        - Show this help menu",
         "",
         'Type a command and press Enter. Try "about" to start!',
       ];
@@ -53,7 +53,7 @@ const COMMANDS = {
           type: "response",
         },
         {
-          text: "Currently pursuing my Master's degree and open for Co-op starting Jan 2027.",
+          text: "Currently pursuing my Master's degree and seeking coop opportunities.",
           type: "accent",
         },
       ];
@@ -90,7 +90,7 @@ const COMMANDS = {
     execute() {
       return [
         {
-          text: "Software Developer — TVS Credit Services (Jun 2024 – Nov 2025)",
+          text: "Software Developer - TVS Credit Services (Jun 2024 – Nov 2025)",
           type: "accent",
         },
         {
@@ -103,7 +103,7 @@ const COMMANDS = {
         },
         { text: "", type: "response" },
         {
-          text: "Graduate Engineer Trainee — TVS Credit (Feb 2024 – May 2024)",
+          text: "Graduate Engineer Trainee - TVS Credit (Feb 2024 – May 2024)",
           type: "accent",
         },
         {
@@ -112,7 +112,7 @@ const COMMANDS = {
         },
         { text: "", type: "response" },
         {
-          text: "Cybersecurity Intern — Infotech Consultancy (May 2023 – Jul 2023)",
+          text: "Cybersecurity Intern - Infotech Consultancy (May 2023 – Jul 2023)",
           type: "accent",
         },
         {
@@ -127,20 +127,25 @@ const COMMANDS = {
     description: "Notable projects",
     execute() {
       return [
-        { text: "TaskFlow API — Java, Spring Boot, PostgreSQL, Docker", type: "success" },
+        { text: "PeerTask - Campus task and service marketplace", type: "success" },
+        {
+          text: "Pulseboard - Customer events, segments, and simulated campaigns",
+          type: "success",
+        },
+        { text: "TaskFlow API - Java, Spring Boot, PostgreSQL, Docker", type: "success" },
         { text: "1. Nexus Gaming Hub", type: "success" },
         {
-          text: "   Full-stack gaming platform — React, Node.js, MySQL, RBAC.",
+          text: "   Full-stack gaming platform - React, Node.js, MySQL, RBAC.",
           type: "response",
         },
         { text: "", type: "response" },
         { text: "2. Conditional GANs for Image Translation", type: "success" },
         {
-          text: "   ML research — U-Net + PatchGAN for image-to-image translation.",
+          text: "   ML research - U-Net + PatchGAN for image-to-image translation.",
           type: "response",
         },
         { text: "", type: "response" },
-        { text: "3. Respiratio — Disease Prediction App", type: "success" },
+        { text: "3. Respiratio - Disease Prediction App", type: "success" },
         {
           text: "   ML app predicting diseases from symptoms with frontend UI.",
           type: "response",
@@ -154,7 +159,7 @@ const COMMANDS = {
         { text: "", type: "response" },
         { text: "5. Home-Service-Management", type: "success" },
         {
-          text: "   Full-stack service booking app — like Swiggy for household workers.",
+          text: "   Full-stack service booking app - like Swiggy for household workers.",
           type: "response",
         },
         { text: "", type: "response" },
@@ -166,13 +171,13 @@ const COMMANDS = {
         { text: "", type: "response" },
         { text: "7. Inventory Management System", type: "success" },
         {
-          text: "   Java desktop app with MySQL — products, orders, customers.",
+          text: "   Java desktop app with MySQL - products, orders, customers.",
           type: "response",
         },
         { text: "", type: "response" },
         { text: "8. Voting System", type: "success" },
         {
-          text: "   Java desktop app — election creation, voter registration, results.",
+          text: "   Java desktop app - election creation, voter registration, results.",
           type: "response",
         },
         { text: "", type: "response" },
@@ -190,7 +195,7 @@ const COMMANDS = {
       return [
         { text: "Northeastern University, Boston, MA", type: "success" },
         {
-          text: "  M.S. Computer Science — Expected May 2028",
+          text: "  M.S. Computer Science - Expected May 2028",
           type: "response",
         },
         { text: "", type: "response" },
@@ -199,7 +204,7 @@ const COMMANDS = {
           type: "success",
         },
         {
-          text: "  B.E. Computer Science Engineering — GPA: 7.36/10.0 — May 2024",
+          text: "  B.E. Computer Science Engineering - GPA: 7.36/10.0 - May 2024",
           type: "response",
         },
       ];
@@ -245,10 +250,10 @@ const COMMANDS = {
     execute() {
       const facts = [
         "I once trained an AI to park cars better than I can!",
-        "My first line of code was in C — and I still have nightmares about pointers.",
+        "My first line of code was in C - and I still have nightmares about pointers.",
         "I've debugged Salesforce workflows at 3 AM. Coffee is my co-pilot.",
         "I built a GAN that translates Google Maps to street views. Maps will never look the same.",
-        "Fun fact: I moved from Chennai to Boston — the weather was a bit of a shock.",
+        "Fun fact: I moved from Chennai to Boston - the weather was a bit of a shock.",
         "I believe every good project starts with a great schema design.",
         "My terminal is my happy place. Clearly, you feel the same way!",
       ];

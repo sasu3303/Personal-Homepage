@@ -1,16 +1,15 @@
 ## September 2026 portfolio refresh
 
 Recruiter-facing pages now prioritize software engineering internships and co-ops,
-with a static role headline, résumé PDF, selected projects, and consistent navigation.
+with a static role headline, resume PDF, selected projects, and consistent navigation.
 TaskFlow API joins the project list; Nexus and Airbnb link to their exact repositories.
-The résumé supplied in September 2026 is the source for experience and team-size corrections.
-January 2027 remains the stated target start date from the existing portfolio; this is
-availability information, not a claim of approved work authorization.
+The resume supplied in September 2026 is the source for experience and team-size corrections.
+The availability badge reads "Seeking for Coop Opportunities".
 
 The original course documentation below and DESIGN.md describe the initial submission.
 The contact page now uses the shared design, and the hero no longer uses the typing animation.
 
-# Sanjay Sundar BV — Personal Homepage
+# Sanjay Sundar BV - Personal Homepage
 
 A personal portfolio website built with vanilla HTML5, CSS3, and ES6+ modules. Features an interactive terminal component, typing animations, scroll-triggered experience timeline. The contact page was generated with AI assistance to demonstrate modern AI-assisted development workflows.
 
@@ -21,7 +20,7 @@ A personal portfolio website built with vanilla HTML5, CSS3, and ES6+ modules. F
 Build a personal homepage using vanilla HTML5, CSS3, and ES6+ as a front-end only static site. The page showcases my professional background, technical skills, work experience, projects, and certifications. It includes an original creative component:
 
 - A **technical demonstration** of vanilla web engineering with ES6 modules
-- An **interactive terminal emulator** — visitors type commands to explore my profile
+- An **interactive terminal emulator** - visitors type commands to explore my profile
 
 ---
 
@@ -35,7 +34,7 @@ Build a personal homepage using vanilla HTML5, CSS3, and ES6+ as a front-end onl
 
 | Page            | Description                                                                           |
 | --------------- | ------------------------------------------------------------------------------------- |
-| `index.html`    | Main homepage — hero, about, skills, experience, certifications, interactive terminal |
+| `index.html`    | Main homepage - hero, about, skills, experience, certifications, interactive terminal |
 | `projects.html` | Full project showcase                                                                 |
 | `contact.html`  | Contact info, availability, and co-op details (AI-generated page)                     |
 
@@ -43,17 +42,17 @@ Build a personal homepage using vanilla HTML5, CSS3, and ES6+ as a front-end onl
 
 ## Creative Component
 
-**Interactive Terminal Emulator** — a fully functional command-line interface embedded in the homepage. Visitors type commands like `about`, `skills`, `projects`, `experience`, `contact`, `certs`, `fun`, `clear`, and `help` to explore my profile in a developer-friendly way. Built entirely with vanilla ES6+ JavaScript (~250 lines of original code).
+**Interactive Terminal Emulator** - a fully functional command-line interface embedded in the homepage. Visitors type commands like `about`, `skills`, `projects`, `experience`, `contact`, `certs`, `fun`, `clear`, and `help` to explore my profile in a developer-friendly way. Built entirely with vanilla ES6+ JavaScript (~250 lines of original code).
 
 ---
 
 ## Tech Requirements
 
-- **Core Structure:** HTML5 — semantic tags, accessible markup, W3C compliant
-- **Styling:** CSS3 — custom properties, flexbox, CSS grid, keyframe animations, no `!important`
-- **Layout Framework:** Bootstrap 5.3 — grid system, responsiveness utilities (index + projects pages)
-- **Fonts:** Google Fonts — Poppins for body, Fira Code for terminal, Orbitron/Rajdhani for contact page
-- **Scripting:** ES6+ JavaScript Modules — IntersectionObserver, typewriter animation, terminal command engine
+- **Core Structure:** HTML5 - semantic tags, accessible markup, W3C compliant
+- **Styling:** CSS3 - custom properties, flexbox, CSS grid, keyframe animations, no `!important`
+- **Layout Framework:** Bootstrap 5.3 - grid system, responsiveness utilities (index + projects pages)
+- **Fonts:** Google Fonts - Poppins for body, Fira Code for terminal, Orbitron/Rajdhani for contact page
+- **Scripting:** ES6+ JavaScript Modules - IntersectionObserver, typewriter animation, terminal command engine
 - **Linting:** ESLint with `eslint:recommended` rules
 - **Formatting:** Prettier with 2-space indent, double quotes, trailing commas
 
@@ -65,16 +64,16 @@ Build a personal homepage using vanilla HTML5, CSS3, and ES6+ as a front-end onl
 homepage/
 ├── index.html              # Main homepage (hero, about, skills, experience, terminal)
 ├── projects.html           # Projects showcase
-├── contact.html            # Contact page (AI-generated — different visual style)
+├── contact.html            # Contact page (AI-generated - different visual style)
 ├── css/
-│   ├── styles.css          # Global styles — navbar, hero, about, skills, experience
+│   ├── styles.css          # Global styles - navbar, hero, about, skills, experience
 │   ├── projects.css        # Projects page specific card styles
 │   ├── terminal.css        # Interactive terminal component styles
 │   └── contact-ai.css      # Polished AI-styled contact page (separate design system)
 ├── js/
-│   ├── app.js              # Entry point — imports and initialises all modules
+│   ├── app.js              # Entry point - imports and initialises all modules
 │   ├── main.js             # Navigation toggle, scroll animations, active nav highlight
-│   ├── terminal.js         # Full terminal engine — commands, output rendering, input handling
+│   ├── terminal.js         # Full terminal engine - commands, output rendering, input handling
 │   └── typing.js           # Typewriter animation for hero section role cycling
 ├── images/
 │   ├── favicon.svg         # SVG site favicon
@@ -135,7 +134,7 @@ Then open `http://localhost:3000` in your browser.
 
 ## GenAI Tools Usage
 
-**Tool:** Claude (Anthropic) — model `claude-sonnet-4-6`
+**Tool:** Claude (Anthropic) - model `claude-sonnet-4-6`
 **Platform:** claude.ai web interface
 **Date:** May 2026
 
@@ -159,7 +158,7 @@ Then open `http://localhost:3000` in your browser.
 **Sanjay Sundar BV**
 
 - Homepage: [sasu3303.github.io/Personal-Homepage](https://sasu3303.github.io/Personal-Homepage)
-- Education: M.S. Computer Science — Northeastern University, Boston (Expected May 2028)
+- Education: M.S. Computer Science - Northeastern University, Boston (Expected May 2028)
 - Email: [sanjaysundar.bv@gmail.com](mailto:sanjaysundar.bv@gmail.com)
 - LinkedIn: [linkedin.com/in/sanjaysundarbv](https://www.linkedin.com/in/sanjaysundarbv/)
 - GitHub: [github.com/sasu3303](https://github.com/sasu3303)
@@ -169,11 +168,11 @@ Then open `http://localhost:3000` in your browser.
 ## Class Link
 
 **CS 5610 - Web Development**
-Northeastern University — Khoury College of Computer Sciences
+Northeastern University - Khoury College of Computer Sciences
 🔗 [Course Link](https://johnguerra.co/classes/webDevelopment_online_summer_2026/)
 
 ---
 
 ## License
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
