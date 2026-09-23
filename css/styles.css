@@ -401,3 +401,118 @@ section {
 .site-footer a:hover {
   color: #fff;
 }
+
+/* Recruiter-focused layout and accessible navigation. */
+.hero-section {
+  min-height: 0;
+  padding: 88px 0;
+}
+.hero-section .hero-desc {
+  max-width: 690px;
+  color: #d0d9e6;
+}
+.hero-section .subtitle {
+  color: #bfe7ff;
+  font-weight: 600;
+}
+.selected-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+.work-card {
+  background: #fff;
+  border: 1px solid #dce4ed;
+  border-radius: 12px;
+  padding: 28px;
+  overflow-wrap: anywhere;
+}
+.work-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #16213e;
+}
+.work-card p {
+  line-height: 1.75;
+}
+.work-card a {
+  color: #124d78;
+  font-weight: 600;
+}
+.work-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.09em;
+  font-weight: 700;
+  color: #365a75;
+}
+.work-stack {
+  font-size: 0.8rem;
+  color: #526173;
+}
+.exp-progression-note {
+  color: #245372;
+}
+.about-info-item .value {
+  overflow-wrap: anywhere;
+  min-width: 0;
+}
+section[id],
+[id="nexus"],
+[id="taskflow"],
+[id="image-translation"] {
+  scroll-margin-top: 100px;
+}
+.my-navbar .nav-link-active {
+  color: #4fc3f7;
+}
+:focus-visible {
+  outline: 3px solid #dd9500;
+  outline-offset: 4px;
+}
+.skip-link {
+  position: fixed;
+  top: -100px;
+  left: 16px;
+  padding: 12px 20px;
+  background: white;
+  color: #16213e;
+  z-index: 2000;
+}
+.skip-link:focus {
+  top: 12px;
+}
+@media (max-width: 991px) {
+  .selected-grid {
+    grid-template-columns: 1fr;
+  }
+  .my-navbar .nav-link {
+    font-size: 0.78rem;
+    margin-left: 0;
+  }
+}
+@media (max-width: 767px) {
+  .my-navbar > .container {
+    flex-wrap: wrap;
+  }
+  .navbar-collapse {
+    flex-basis: 100%;
+  }
+  .hero-section {
+    padding: 56px 0;
+  }
+  .hero-section h1 {
+    font-size: 2.1rem;
+  }
+  .hero-badge {
+    line-height: 1.7;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

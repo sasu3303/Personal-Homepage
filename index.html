@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Sanjay Sundar BV — Computer Science graduate student at Northeastern University. Full-stack developer and AI/ML enthusiast."
+      content="Sanjay Sundar BV — Computer Science graduate student at Northeastern University. Software engineering internship and co-op candidate. Java, Spring Boot, React, SQL, and Salesforce."
     />
     <meta name="author" content="Sanjay Sundar BV" />
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
-    <title>Sanjay Sundar BV — Portfolio</title>
+    <title>Sanjay Sundar BV | Software Engineer</title>
 
     <!-- Google Fonts -->
     <link
@@ -26,10 +26,17 @@
     <!-- My Styles -->
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/terminal.css" />
+    <meta property="og:title" content="Sanjay Sundar BV | Software Engineer" />
+    <meta
+      property="og:description"
+      content="Sanjay Sundar BV — Computer Science graduate student at Northeastern University. Software engineering internship and co-op candidate. Java, Spring Boot, React, SQL, and Salesforce."
+    />
+    <meta property="og:type" content="website" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <!-- NAVBAR -->
-    <nav class="my-navbar">
+    <nav class="my-navbar" aria-label="Main navigation">
       <div class="container d-flex justify-content-between align-items-center">
         <a href="index.html" class="logo">&lt;Sanjay /&gt;</a>
         <button
@@ -52,286 +59,346 @@
             <li><a href="#experience" class="nav-link">Experience</a></li>
             <li><a href="#terminal" class="nav-link">Terminal</a></li>
             <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li>
+              <a
+                href="assets/SanjaySundarBV_Resume.pdf"
+                class="nav-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Résumé</a
+              >
+            </li>
             <li><a href="contact.html" class="nav-link">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- HERO -->
-    <section class="hero-section">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-8">
-            <span class="hero-badge">&#128075; Available for Co-op — Jan 2027</span>
-            <h1>Hi, I'm <span>Sanjay Sundar BV</span></h1>
-            <p class="subtitle">
-              I'm a <span class="typed-text" id="typedText"></span
-              ><span id="cursor" style="color: #4fc3f7">|</span>
-            </p>
-            <p class="hero-desc">
-              CS graduate student at Northeastern University, Boston. I love building
-              things with code — from full-stack web apps to AI/ML models and enterprise
-              Salesforce solutions.
-            </p>
-            <div class="hero-btns">
-              <a href="projects.html" class="btn-main">See My Work</a>
-              <a href="contact.html" class="btn-outline-main">Contact Me</a>
+    <main id="main-content">
+      <!-- HERO -->
+      <section class="hero-section">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <span class="hero-badge"
+                >Seeking software engineering co-ops · January 2027</span
+              >
+              <h1>Hi, I'm <span>Sanjay Sundar BV</span></h1>
+              <p class="subtitle">Software Engineer · Java, Spring Boot &amp; React</p>
+              <p class="hero-desc">
+                M.S. Computer Science student at Northeastern University in Boston.
+                Previously at TVS Credit, where I built and supported production
+                Salesforce lending workflows. I build backend APIs and full-stack
+                applications with a focus on data modeling, access control, and reliable
+                delivery.
+              </p>
+              <div class="hero-btns">
+                <a
+                  href="assets/SanjaySundarBV_Resume.pdf"
+                  class="btn-main"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View Résumé (PDF)</a
+                >
+                <a href="projects.html" class="btn-outline-main">Explore Projects</a>
+                <a
+                  href="mailto:balakrishnanvenkat.s@northeastern.edu"
+                  class="btn-outline-main"
+                  >Email Me</a
+                >
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ABOUT -->
-    <section id="about">
-      <div class="container">
-        <h2 class="section-heading">About <span>Me</span></h2>
-        <div class="heading-line"></div>
-        <div class="row">
-          <div class="col-lg-7">
-            <p class="about-text">
-              I'm Sanjay — a CS grad student at Northeastern's Khoury College, and a
-              builder at heart. Before coming to Boston, I spent over a year as a Software
-              Developer at TVS Credit Services, building Salesforce-based financial
-              products that reached real customers at scale.
-            </p>
-            <p class="about-text">
-              I work across ML, full-stack, and systems — and I'm most alive when the
-              problem is genuinely hard to get right.
-            </p>
-            <div class="mt-4">
-              <div class="about-info-item">
-                <span class="label">&#127979; University:</span>
-                <span class="value">Northeastern University, Boston</span>
-              </div>
-              <div class="about-info-item">
-                <span class="label">&#127891; Degree:</span>
-                <span class="value">M.S. Computer Science (Expected May 2028)</span>
-              </div>
-              <div class="about-info-item">
-                <span class="label">&#128205; Location:</span>
-                <span class="value">Boston, MA</span>
-              </div>
-              <div class="about-info-item">
-                <span class="label">&#128222; Email:</span>
-                <span class="value">sanjaysundar.bv@gmail.com</span>
-              </div>
-            </div>
+      <section id="selected-work" aria-labelledby="selected-heading">
+        <div class="container">
+          <h2 class="section-heading" id="selected-heading">
+            Selected <span>Work</span>
+          </h2>
+          <div class="heading-line"></div>
+          <div class="selected-grid">
+            <article class="work-card">
+              <p class="work-label">BACKEND ENGINEERING</p>
+              <h3>TaskFlow API</h3>
+              <p>
+                Multi-user project and task management with JWT authentication and
+                project-scoped access control.
+              </p>
+              <p class="work-stack">Java · Spring Boot · PostgreSQL · Docker</p>
+              <a href="projects.html#taskflow">Explore the project →</a>
+            </article>
+            <article class="work-card">
+              <p class="work-label">FULL-STACK DEVELOPMENT</p>
+              <h3>Nexus Gaming Hub</h3>
+              <p>
+                A gaming platform combining a storefront, tournament tracking, and guild
+                management with separate admin and player experiences.
+              </p>
+              <p class="work-stack">React · Node.js · Express · MySQL</p>
+              <a href="projects.html#nexus">Explore the project →</a>
+            </article>
+            <article class="work-card">
+              <p class="work-label">APPLIED MACHINE LEARNING</p>
+              <h3>Image-to-Image Translation</h3>
+              <p>
+                Conditional GANs using a U-Net generator and PatchGAN discriminator for
+                translation across image domains.
+              </p>
+              <p class="work-stack">Python · TensorFlow · PyTorch</p>
+              <a href="projects.html#image-translation">Explore the project →</a>
+            </article>
           </div>
-          <div class="col-lg-5 mt-4 mt-lg-0">
-            <div class="row">
-              <div class="col-6">
-                <div class="stat-box">
-                  <span class="num">1.5+</span>
-                  <span class="lbl">Years of Work Exp</span>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about">
+        <div class="container">
+          <h2 class="section-heading">About <span>Me</span></h2>
+          <div class="heading-line"></div>
+          <div class="row">
+            <div class="col-lg-7">
+              <p class="about-text">
+                I'm Sanjay — a CS grad student at Northeastern's Khoury College, and a
+                builder at heart. Before coming to Boston, I spent over a year as a
+                Software Developer at TVS Credit Services, building Salesforce-based
+                financial products that reached real customers at scale.
+              </p>
+              <p class="about-text">
+                I am looking for software engineering internships and co-ops, with a focus
+                on backend and full-stack development. My projects span Spring Boot APIs,
+                relational databases, React applications, and machine learning.
+              </p>
+              <div class="mt-4">
+                <div class="about-info-item">
+                  <span class="label">&#127979; University:</span>
+                  <span class="value">Northeastern University, Boston</span>
+                </div>
+                <div class="about-info-item">
+                  <span class="label">&#127891; Degree:</span>
+                  <span class="value">M.S. Computer Science (Expected May 2028)</span>
+                </div>
+                <div class="about-info-item">
+                  <span class="label">&#128205; Location:</span>
+                  <span class="value">Boston, MA</span>
+                </div>
+                <div class="about-info-item">
+                  <span class="label">&#128222; Email:</span>
+                  <span class="value">balakrishnanvenkat.s@northeastern.edu</span>
                 </div>
               </div>
-              <div class="col-6">
-                <div class="stat-box">
-                  <span class="num">2028</span>
-                  <span class="lbl">Expected Grad</span>
+            </div>
+            <div class="col-lg-5 mt-4 mt-lg-0">
+              <div class="row">
+                <div class="col-6">
+                  <div class="stat-box">
+                    <span class="num">1.5+</span>
+                    <span class="lbl">Years of Work Exp</span>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="stat-box">
+                    <span class="num">2028</span>
+                    <span class="lbl">Expected Grad</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- SKILLS -->
-    <section id="skills">
-      <div class="container">
-        <h2 class="section-heading">My <span>Skills</span></h2>
-        <div class="heading-line"></div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="skill-box">
-              <h5>&#128187; Languages</h5>
-              <span class="skill-pill">Java</span>
-              <span class="skill-pill">Python</span>
-              <span class="skill-pill">SQL</span>
-              <span class="skill-pill">JavaScript</span>
-              <span class="skill-pill">HTML5</span>
-              <span class="skill-pill">CSS3</span>
-              <span class="skill-pill">Apex</span>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="skill-box">
-              <h5>&#128451; Databases</h5>
-              <span class="skill-pill">MySQL</span>
-              <span class="skill-pill">PostgreSQL</span>
-              <span class="skill-pill">MongoDB</span>
-              <span class="skill-pill">Salesforce SOQL</span>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="skill-box">
-              <h5>&#9881; Frameworks</h5>
-              <span class="skill-pill">React.js</span>
-              <span class="skill-pill">Node.js</span>
-              <span class="skill-pill">Spring Boot</span>
-              <span class="skill-pill">Express</span>
-              <span class="skill-pill">Bootstrap 5</span>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="skill-box">
-              <h5>&#129504; AI / ML</h5>
-              <span class="skill-pill">TensorFlow</span>
-              <span class="skill-pill">PyTorch</span>
-              <span class="skill-pill">GANs</span>
-              <span class="skill-pill">Reinforcement Learning</span>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="skill-box">
-              <h5>&#9729; Platforms</h5>
-              <span class="skill-pill">Salesforce Lightning</span>
-              <span class="skill-pill">Unity ML-Agents</span>
-              <span class="skill-pill">GitHub</span>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="skill-box">
-              <h5>&#128295; Dev Tools</h5>
-              <span class="skill-pill">VS Code</span>
-              <span class="skill-pill">IntelliJ IDEA</span>
-              <span class="skill-pill">Blender</span>
-              <span class="skill-pill">Nmap</span>
-              <span class="skill-pill">Burp Suite</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section id="experience">
-      <div class="container">
-        <h2 class="section-heading">Work <span>Experience</span></h2>
-        <div class="heading-line"></div>
-
-        <!-- TVS: merged progression card -->
-        <div class="exp-card">
-          <div class="role">
-            Graduate Engineer Trainee <span style="color: #4fc3f7">&#8594;</span> Software
-            Developer
-          </div>
-          <div class="company">TVS Credit Services Limited — Chennai, India</div>
-          <span class="date-badge">February 2024 – November 2025</span>
-          <div class="exp-progression-note">
-            Joined as a Graduate Engineer Trainee and grew into a full Software Developer
-            role within the same team — a progression that came from shipping production
-            code from day one.
-          </div>
-          <ul>
-            <li>
-              Led end-to-end development and rollout of the Cross-Sell Personal Loan
-              (CSPL) portfolio in Salesforce, coordinating with QA teams across multiple
-              production releases to ensure stable deployment.
-            </li>
-            <li>
-              Conducted on-site training for 110+ call center agents and aligned with
-              external vendors to accelerate Salesforce adoption, reducing workflow
-              bottlenecks in loan processing operations.
-            </li>
-            <li>
-              Built and optimized backend logic for the Loan Origination Services system
-              in Salesforce, improving processing efficiency for 1,000+ daily financial
-              transactions.
-            </li>
-            <li>
-              Contributed to production systems from day one, gaining hands-on depth in
-              Salesforce development within a live financial services environment.
-            </li>
-          </ul>
-        </div>
-
-        <div class="exp-card">
-          <div class="role">Cybersecurity Intern</div>
-          <div class="company">Infotech Consultancy — Hyderabad, India</div>
-          <span class="date-badge">May 2023 – July 2023</span>
-          <ul>
-            <li>
-              Performed network monitoring, log analysis, and penetration testing using
-              Nmap, OWASP ZAP, and Burp Suite — identifying and remediating
-              vulnerabilities across the organization's infrastructure.
-            </li>
-            <li>
-              Configured firewalls and established incident response protocols aligned
-              with ISO 27001 and NIST frameworks, strengthening the overall security
-              posture.
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- CERTIFICATIONS -->
-    <section id="certifications" style="background: #f8f9fa; padding: 70px 0">
-      <div class="container">
-        <h2 class="section-heading">Certifi<span>cations</span></h2>
-        <div class="heading-line"></div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="cert-card">
-              <div class="cert-icon-box" aria-hidden="true">SF</div>
-              <div>
-                <div class="cert-name">Salesforce Certified Agentforce Specialist</div>
-                <div class="cert-org">Salesforce — November 2025</div>
+      <!-- SKILLS -->
+      <section id="skills">
+        <div class="container">
+          <h2 class="section-heading">My <span>Skills</span></h2>
+          <div class="heading-line"></div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="skill-box">
+                <h5>&#128187; Languages</h5>
+                <span class="skill-pill">Java</span>
+                <span class="skill-pill">Python</span>
+                <span class="skill-pill">SQL</span>
+                <span class="skill-pill">JavaScript</span>
+                <span class="skill-pill">HTML5</span>
+                <span class="skill-pill">CSS3</span>
+                <span class="skill-pill">Apex</span>
               </div>
             </div>
-          </div>
-          <div class="col-md-6">
-            <div class="cert-card">
-              <div class="cert-icon-box" aria-hidden="true">AI</div>
-              <div>
-                <div class="cert-name">Salesforce Certified AI Associate</div>
-                <div class="cert-org">Salesforce — October 2024</div>
+            <div class="col-md-4">
+              <div class="skill-box">
+                <h5>&#128451; Databases</h5>
+                <span class="skill-pill">MySQL</span>
+                <span class="skill-pill">PostgreSQL</span>
+                <span class="skill-pill">MongoDB</span>
+                <span class="skill-pill">Salesforce SOQL</span>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="skill-box">
+                <h5>&#9881; Frameworks</h5>
+                <span class="skill-pill">React.js</span>
+                <span class="skill-pill">Node.js</span>
+                <span class="skill-pill">Spring Boot</span>
+                <span class="skill-pill">Express</span>
+                <span class="skill-pill">Bootstrap 5</span>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="skill-box">
+                <h5>&#129504; AI / ML</h5>
+                <span class="skill-pill">TensorFlow</span>
+                <span class="skill-pill">PyTorch</span>
+                <span class="skill-pill">GANs</span>
+                <span class="skill-pill">Reinforcement Learning</span>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="skill-box">
+                <h5>&#9729; Platforms</h5>
+                <span class="skill-pill">Salesforce Lightning</span>
+                <span class="skill-pill">Unity ML-Agents</span>
+                <span class="skill-pill">GitHub</span>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="skill-box">
+                <h5>&#128295; Dev Tools</h5>
+                <span class="skill-pill">VS Code</span>
+                <span class="skill-pill">IntelliJ IDEA</span>
+                <span class="skill-pill">Blender</span>
+                <span class="skill-pill">Nmap</span>
+                <span class="skill-pill">Burp Suite</span>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- TERMINAL (the fun part I added!) -->
-    <section id="terminal">
-      <div class="container">
-        <h2 class="section-heading" style="color: #4fc3f7">
-          Interactive <span style="color: #fff">Terminal</span>
-        </h2>
-        <div class="heading-line"></div>
-        <p class="terminal-intro-text">
-          I built this little terminal — type a command to learn more about me! Try
-          <code style="color: #4fc3f7">help</code> to start.
-        </p>
-        <div class="terminal" style="max-width: 780px">
-          <div class="terminal-titlebar">
-            <span class="terminal-dot terminal-dot-red"></span>
-            <span class="terminal-dot terminal-dot-yellow"></span>
-            <span class="terminal-dot terminal-dot-green"></span>
-            <span class="terminal-titlebar-text">visitor@sanjay — bash — 80x24</span>
+      <!-- EXPERIENCE -->
+      <section id="experience">
+        <div class="container">
+          <h2 class="section-heading">Work <span>Experience</span></h2>
+          <div class="heading-line"></div>
+
+          <!-- TVS: merged progression card -->
+          <div class="exp-card">
+            <div class="role">
+              Graduate Engineer Trainee
+              <span style="color: #4fc3f7">&#8594;</span> Software Developer
+            </div>
+            <div class="company">TVS Credit Services Limited — Chennai, India</div>
+            <span class="date-badge">February 2024 – November 2025</span>
+            <div class="exp-progression-note">
+              Graduate Engineer Trainee: February–May 2024.<br />
+              Software Developer: June 2024–November 2025.
+            </div>
+            <ul>
+              <li>
+                Led end-to-end development and rollout of the Cross-Sell Personal Loan
+                (CSPL) portfolio in Salesforce, coordinating with QA teams across multiple
+                production releases to ensure stable deployment.
+              </li>
+              <li>
+                Conducted on-site training for 10+ call center agents and aligned with
+                external vendors to accelerate Salesforce adoption, reducing workflow
+                bottlenecks in loan processing operations.
+              </li>
+              <li>
+                Built backend logic for the Loan Origination Services (LOS) system in
+                Salesforce, supporting loan application intake and processing workflows.
+              </li>
+              <li>
+                Provided ongoing production support for CSPL, working with QA teams to
+                investigate and resolve post-launch issues.
+              </li>
+            </ul>
           </div>
-          <div class="terminal-body">
-            <div class="terminal-input-row">
-              <span class="terminal-prompt">visitor@sanjay:~$</span>
-              <input
-                type="text"
-                class="terminal-input"
-                placeholder='Type "help" to start...'
-                aria-label="Terminal command input"
-                autocomplete="off"
-                spellcheck="false"
-              />
+
+          <div class="exp-card">
+            <div class="role">Cybersecurity Intern</div>
+            <div class="company">Infotech Consultancy — Hyderabad, India</div>
+            <span class="date-badge">May 2023 – July 2023</span>
+            <ul>
+              <li>
+                Performed network monitoring, log analysis, and penetration testing using
+                Nmap, OWASP ZAP, and Burp Suite to assess infrastructure vulnerabilities.
+              </li>
+              <li>
+                Supported incident response and malware analysis with SIEM tools, applying
+                ISO 27001 and NIST frameworks alongside secure development practices.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- CERTIFICATIONS -->
+      <section id="certifications" style="background: #f8f9fa; padding: 70px 0">
+        <div class="container">
+          <h2 class="section-heading">Certifi<span>cations</span></h2>
+          <div class="heading-line"></div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="cert-card">
+                <div class="cert-icon-box" aria-hidden="true">SF</div>
+                <div>
+                  <div class="cert-name">Salesforce Certified Agentforce Specialist</div>
+                  <div class="cert-org">Salesforce — November 2025</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="cert-card">
+                <div class="cert-icon-box" aria-hidden="true">AI</div>
+                <div>
+                  <div class="cert-name">Salesforce Certified AI Associate</div>
+                  <div class="cert-org">Salesforce — October 2024</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
+      <!-- TERMINAL (the fun part I added!) -->
+      <section id="terminal">
+        <div class="container">
+          <h2 class="section-heading" style="color: #4fc3f7">
+            Interactive <span style="color: #fff">Terminal</span>
+          </h2>
+          <div class="heading-line"></div>
+          <p class="terminal-intro-text">
+            I built this little terminal — type a command to learn more about me! Try
+            <code style="color: #4fc3f7">help</code> to start.
+          </p>
+          <div class="terminal" style="max-width: 780px">
+            <div class="terminal-titlebar">
+              <span class="terminal-dot terminal-dot-red"></span>
+              <span class="terminal-dot terminal-dot-yellow"></span>
+              <span class="terminal-dot terminal-dot-green"></span>
+              <span class="terminal-titlebar-text">visitor@sanjay — bash — 80x24</span>
+            </div>
+            <div class="terminal-body">
+              <div class="terminal-input-row">
+                <span class="terminal-prompt">visitor@sanjay:~$</span>
+                <input
+                  type="text"
+                  class="terminal-input"
+                  placeholder='Type "help" to start...'
+                  aria-label="Terminal command input"
+                  autocomplete="off"
+                  spellcheck="false"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- FOOTER -->
     <footer class="site-footer">
       <div
@@ -348,7 +415,7 @@
             rel="noopener noreferrer"
             >LinkedIn</a
           >
-          <a href="mailto:sanjaysundar.bv@gmail.com">Email</a>
+          <a href="mailto:balakrishnanvenkat.s@northeastern.edu">Email</a>
         </div>
       </div>
     </footer>

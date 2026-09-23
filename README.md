@@ -1,3 +1,15 @@
+## September 2026 portfolio refresh
+
+Recruiter-facing pages now prioritize software engineering internships and co-ops,
+with a static role headline, résumé PDF, selected projects, and consistent navigation.
+TaskFlow API joins the project list; Nexus and Airbnb link to their exact repositories.
+The résumé supplied in September 2026 is the source for experience and team-size corrections.
+January 2027 remains the stated target start date from the existing portfolio; this is
+availability information, not a claim of approved work authorization.
+
+The original course documentation below and DESIGN.md describe the initial submission.
+The contact page now uses the shared design, and the hero no longer uses the typing animation.
+
 # Sanjay Sundar BV — Personal Homepage
 
 A personal portfolio website built with vanilla HTML5, CSS3, and ES6+ modules. Features an interactive terminal component, typing animations, scroll-triggered experience timeline. The contact page was generated with AI assistance to demonstrate modern AI-assisted development workflows.
@@ -21,11 +33,11 @@ Build a personal homepage using vanilla HTML5, CSS3, and ES6+ as a front-end onl
 
 ## Pages
 
-| Page | Description |
-|------|-------------|
-| `index.html` | Main homepage — hero, about, skills, experience, certifications, interactive terminal |
-| `projects.html` | Full project showcase |
-| `contact.html` | Contact info, availability, and co-op details (AI-generated page) |
+| Page            | Description                                                                           |
+| --------------- | ------------------------------------------------------------------------------------- |
+| `index.html`    | Main homepage — hero, about, skills, experience, certifications, interactive terminal |
+| `projects.html` | Full project showcase                                                                 |
+| `contact.html`  | Contact info, availability, and co-op details (AI-generated page)                     |
 
 ---
 
@@ -68,7 +80,7 @@ homepage/
 │   ├── favicon.svg         # SVG site favicon
 │   └── screenshot.png      # Homepage screenshot (for README)
 ├── package.json            # Project metadata, scripts, and dev dependencies
-├── .eslintrc.json          # ESLint configuration 
+├── .eslintrc.json          # ESLint configuration
 ├── .prettierrc             # Prettier formatting configuration
 ├── LICENSE                 # MIT License
 └── README.md               # This file
@@ -86,17 +98,20 @@ homepage/
 ### Installation Steps
 
 1. **Clone the repository:**
+
    ```bash
-   git clone https://github.com/sasu3303/homepage.git
-   cd homepage
+   git clone https://github.com/sasu3303/Personal-Homepage.git
+   cd Personal-Homepage
    ```
 
 2. **Install dev dependencies:**
+
    ```bash
    npm install
    ```
 
 3. **Run ESLint:**
+
    ```bash
    npm run lint
    ```
@@ -109,11 +124,12 @@ homepage/
 ### Running Locally
 
 **Node.js serve:**
+
 ```bash
 npx serve .
 ```
-Then open `http://localhost:3000` in your browser.
 
+Then open `http://localhost:3000` in your browser.
 
 ---
 
@@ -126,7 +142,7 @@ Then open `http://localhost:3000` in your browser.
 ### AI Usage Highlights
 
 - **Contact page (AI-generated page):** The entire `contact.html` and `contact-ai.css` were designated as the AI-generated page, with a visibly different design system (cyberpunk/dark theme vs the beginner Bootstrap style of the other pages).
-  - *Prompt used:* "Generate a polished, AI-aesthetic contact page that looks visually different from the rest of the site."
+  - _Prompt used:_ "Generate a polished, AI-aesthetic contact page that looks visually different from the rest of the site."
 
 - **Content and copy editing:** Work experience bullet points, about me section, and project descriptions were refined with Claude based on my original resume content.
 
@@ -135,13 +151,14 @@ Then open `http://localhost:3000` in your browser.
 ---
 
 ## Video Demonstration
-🎥 [Watch the demo video](https://youtu.be/vyLfcLn69HY)
----
+
+## 🎥 [Watch the demo video](https://youtu.be/vyLfcLn69HY)
 
 ## Author
 
 **Sanjay Sundar BV**
-- Homepage: [sasu3303.github.io/homepage](https://sasu3303.github.io/homepage)
+
+- Homepage: [sasu3303.github.io/Personal-Homepage](https://sasu3303.github.io/Personal-Homepage)
 - Education: M.S. Computer Science — Northeastern University, Boston (Expected May 2028)
 - Email: [sanjaysundar.bv@gmail.com](mailto:sanjaysundar.bv@gmail.com)
 - LinkedIn: [linkedin.com/in/sanjaysundarbv](https://www.linkedin.com/in/sanjaysundarbv/)

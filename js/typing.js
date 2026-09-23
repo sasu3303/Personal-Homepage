@@ -19,7 +19,9 @@ export function initTypingAnimation(
   pauseTime = 2000,
 ) {
   const element = document.querySelector(selector);
-  if (!element) return;
+  if (!element) {
+    return;
+  }
 
   let wordIndex = 0;
   let charIndex = 0;

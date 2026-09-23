@@ -127,31 +127,59 @@ const COMMANDS = {
     description: "Notable projects",
     execute() {
       return [
+        { text: "TaskFlow API — Java, Spring Boot, PostgreSQL, Docker", type: "success" },
         { text: "1. Nexus Gaming Hub", type: "success" },
-        { text: "   Full-stack gaming platform — React, Node.js, MySQL, RBAC.", type: "response" },
+        {
+          text: "   Full-stack gaming platform — React, Node.js, MySQL, RBAC.",
+          type: "response",
+        },
         { text: "", type: "response" },
         { text: "2. Conditional GANs for Image Translation", type: "success" },
-        { text: "   ML research — U-Net + PatchGAN, 95% accuracy, 5 datasets.", type: "response" },
+        {
+          text: "   ML research — U-Net + PatchGAN for image-to-image translation.",
+          type: "response",
+        },
         { text: "", type: "response" },
         { text: "3. Respiratio — Disease Prediction App", type: "success" },
-        { text: "   ML app predicting diseases from symptoms with frontend UI.", type: "response" },
+        {
+          text: "   ML app predicting diseases from symptoms with frontend UI.",
+          type: "response",
+        },
         { text: "", type: "response" },
         { text: "4. Autonomous Parking Simulation", type: "success" },
-        { text: "   3D RL agent using PPO in Unity ML-Agents + Blender.", type: "response" },
+        {
+          text: "   3D RL agent using PPO in Unity ML-Agents + Blender.",
+          type: "response",
+        },
         { text: "", type: "response" },
         { text: "5. Home-Service-Management", type: "success" },
-        { text: "   Full-stack service booking app — like Swiggy for household workers.", type: "response" },
+        {
+          text: "   Full-stack service booking app — like Swiggy for household workers.",
+          type: "response",
+        },
         { text: "", type: "response" },
         { text: "6. Airbnb SF Listings", type: "success" },
-        { text: "   JS + DOM page fetching 50 SF listings with live search and filters.", type: "response" },
+        {
+          text: "   JS + DOM page fetching 50 SF listings with live search and filters.",
+          type: "response",
+        },
         { text: "", type: "response" },
         { text: "7. Inventory Management System", type: "success" },
-        { text: "   Java desktop app with MySQL — products, orders, customers.", type: "response" },
+        {
+          text: "   Java desktop app with MySQL — products, orders, customers.",
+          type: "response",
+        },
         { text: "", type: "response" },
         { text: "8. Voting System", type: "success" },
-        { text: "   Java desktop app — election creation, voter registration, results.", type: "response" },
+        {
+          text: "   Java desktop app — election creation, voter registration, results.",
+          type: "response",
+        },
         { text: "", type: "response" },
-        { text: "  -> See all projects: sasu3303.github.io/Personal-Homepage/projects.html", type: "accent" },
+        {
+          text: "  -> See all projects: sasu3303.github.io/Personal-Homepage/projects.html",
+          type: "accent",
+        },
       ];
     },
   },
@@ -183,7 +211,7 @@ const COMMANDS = {
     execute() {
       return [
         {
-          text: "Email:    sanjaysundar.bv@gmail.com",
+          text: "Email:    balakrishnanvenkat.s@northeastern.edu",
           type: "success",
         },
         {
@@ -245,7 +273,9 @@ export function initTerminal() {
   const terminalBody = document.querySelector(".terminal-body");
   const terminalInput = document.querySelector(".terminal-input");
 
-  if (!terminalBody || !terminalInput) return;
+  if (!terminalBody || !terminalInput) {
+    return;
+  }
 
   // Render welcome message on load
   const welcomeLines = [
@@ -265,12 +295,16 @@ export function initTerminal() {
 
   // Handle command entry
   terminalInput.addEventListener("keydown", (event) => {
-    if (event.key !== "Enter") return;
+    if (event.key !== "Enter") {
+      return;
+    }
 
     const command = terminalInput.value.trim().toLowerCase();
     terminalInput.value = "";
 
-    if (!command) return;
+    if (!command) {
+      return;
+    }
 
     // Echo the command
     renderOutput(terminalBody, [
@@ -284,7 +318,7 @@ export function initTerminal() {
       return;
     }
 
-    if (COMMANDS[command]) {
+    if (Object.hasOwn(COMMANDS, command)) {
       const result = COMMANDS[command].execute();
       if (result) {
         renderOutput(terminalBody, result);
