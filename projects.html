@@ -59,7 +59,7 @@
             <li><a href="projects.html" class="nav-link active">Projects</a></li>
             <li>
               <a
-                href="assets/SanjayCPT2027.pdf"
+                href="assets/SanjaySundarBV_Resume.pdf"
                 class="nav-link"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -87,7 +87,6 @@
       <!-- PROJECTS -->
       <section class="projects-section">
         <div class="container">
-
           <article class="project-card featured-card mb-4" id="micromatch">
             <div class="project-card-top">
               <div class="project-type">C++ SYSTEMS ENGINEERING</div>
@@ -96,9 +95,9 @@
             <div class="project-card-body">
               <div>
                 <p>
-                  A C++20 exchange simulator for a single instrument, supporting limit
-                  and market orders, price-time matching, cancellation, and order-book
-                  depth. A bounded queue connects producers to a dedicated matching thread.
+                  A C++20 exchange simulator for a single instrument, supporting limit and
+                  market orders, price-time matching, cancellation, and order-book depth.
+                  A bounded queue connects producers to a dedicated matching thread.
                 </p>
                 <div class="tech-stack">
                   <span class="tech-badge">C++20</span>
@@ -107,17 +106,36 @@
                   <span class="tech-badge">TCP/IP</span>
                   <span class="tech-badge">CMake</span>
                 </div>
-                <a class="project-github-link"
+                <a
+                  class="project-github-link"
                   href="https://github.com/sasu3303/MicroMatch"
-                  target="_blank" rel="noopener noreferrer">View Source on GitHub</a>
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View Source on GitHub</a
+                >
               </div>
               <div>
                 <ul class="project-highlights">
-                  <li>Ordered price maps, FIFO order lists, and hash-based cancellation lookups</li>
-                  <li>RAII resource ownership, backpressure, and coordinated thread shutdown</li>
+                  <li>
+                    Ordered price maps, FIFO order lists, and hash-based cancellation
+                    lookups
+                  </li>
+                  <li>
+                    RAII resource ownership, backpressure, and coordinated thread shutdown
+                  </li>
                   <li>Local TCP gateway with message framing and disconnect handling</li>
-                  <li>24 C++ test cases plus TCP integration and randomized reference checks</li>
-                  <li>Local cancellation benchmark: p95 0.471 µs indexed versus 5.428 µs vector scan, a 91.3% reduction</li>
+                  <li>
+                    12.36M commands per second with 71 ns p95 core command latency across
+                    local 200K-command trials
+                  </li>
+                  <li>
+                    24 C++ test cases plus TCP integration, randomized reference checks,
+                    and sanitizer runs
+                  </li>
+                  <li>
+                    Local cancellation benchmark: p95 0.471 µs indexed versus 5.428 µs
+                    vector scan, a 91.3% reduction
+                  </li>
                 </ul>
               </div>
             </div>
@@ -202,8 +220,12 @@
                   </li>
                   <li>Workspace-scoped data and duplicate-event handling</li>
                   <li>
-                    Campaign scheduling and simulated delivery receipts using synthetic
-                    data
+                    Composite covering index reduced local segment-query p95 latency from
+                    31.0 ms to 0.36 ms across 100K synthetic events
+                  </li>
+                  <li>
+                    Celery and Redis recovery test killed an in-flight worker, confirmed
+                    task redelivery, and produced no duplicate simulated-send receipts
                   </li>
                   <li>
                     27 backend tests covering isolation, validation, scheduling, and
