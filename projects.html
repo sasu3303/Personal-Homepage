@@ -87,6 +87,41 @@
       <!-- PROJECTS -->
       <section class="projects-section">
         <div class="container">
+
+          <article class="project-card featured-card mb-4" id="micromatch">
+            <div class="project-card-top">
+              <div class="project-type">C++ SYSTEMS ENGINEERING</div>
+              <h3>MicroMatch</h3>
+            </div>
+            <div class="project-card-body">
+              <div>
+                <p>
+                  A C++20 exchange simulator for a single instrument, supporting limit
+                  and market orders, price-time matching, cancellation, and order-book
+                  depth. A bounded queue connects producers to a dedicated matching thread.
+                </p>
+                <div class="tech-stack">
+                  <span class="tech-badge">C++20</span>
+                  <span class="tech-badge">STL</span>
+                  <span class="tech-badge">Multithreading</span>
+                  <span class="tech-badge">TCP/IP</span>
+                  <span class="tech-badge">CMake</span>
+                </div>
+                <a class="project-github-link"
+                  href="https://github.com/sasu3303/MicroMatch"
+                  target="_blank" rel="noopener noreferrer">View Source on GitHub</a>
+              </div>
+              <div>
+                <ul class="project-highlights">
+                  <li>Ordered price maps, FIFO order lists, and hash-based cancellation lookups</li>
+                  <li>RAII resource ownership, backpressure, and coordinated thread shutdown</li>
+                  <li>Local TCP gateway with message framing and disconnect handling</li>
+                  <li>24 C++ test cases plus TCP integration and randomized reference checks</li>
+                  <li>Local cancellation benchmark: p95 0.471 µs indexed versus 5.428 µs vector scan, a 91.3% reduction</li>
+                </ul>
+              </div>
+            </div>
+          </article>
           <article class="project-card featured-card mb-4" id="peertask">
             <div class="project-card-top">
               <div class="project-type">CAMPUS MARKETPLACE</div>
